@@ -6,7 +6,7 @@ class ReviewsController < ApplicationController
       
       def show
         review = Review.find(params[:id])
-        render json:category
+        render json:review
       end
     
       def new
@@ -14,7 +14,7 @@ class ReviewsController < ApplicationController
       end
     
       def create
-        created = Review.find_or_create_by(name: params[:name].capitalize)
+        created = Review.find_or_create_by(user_id: params[:user_id], business_id: params[:business_id], up: params[:up], review_text: params[:review_text]))
         render json: created
       end
 
