@@ -83,3 +83,5 @@ production:
   database: transapp-server_production
   username: transapp-server
   password: <%= ENV['TRANSAPP-SERVER_DATABASE_PASSWORD'] %>
+
+host: localhos

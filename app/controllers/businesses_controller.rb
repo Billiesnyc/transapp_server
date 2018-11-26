@@ -4,6 +4,18 @@ class BusinessesController < ApplicationController
         render json:Business.all
       end 
       
+      def cities
+        cities = []
+        Business.all.each do |listing| cities.push(listing.city) end
+        render json:cities.uniq.sort
+      end
+
+      def categories
+        categories = []
+        Business.all.each do |listing| categories.push(listing.category) end
+        render json:categories.uniq.sort
+      end
+
       def show
         business = Business.find(params[:id])
         reviews = []
