@@ -38,7 +38,7 @@ class BusinessesController < ApplicationController
               })
           end
 
-        render json:[reviews, "overall_up": up_score, "overall_down": down_score]
+        render json:[reviews.reverse, "overall_up": up_score, "overall_down": down_score]
       end
     
       def new
