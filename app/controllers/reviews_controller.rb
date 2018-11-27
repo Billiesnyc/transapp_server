@@ -14,7 +14,11 @@ class ReviewsController < ApplicationController
       end
     
       def create
-        created = Review.find_or_create_by(user_id: params[:user_id], business_id: params[:business_id], up: params[:up], review_text: params[:review_text]))
+        created = Review.create(
+          user_id: params[:user_id], 
+          business_id: params[:business_id], 
+          up: params[:up], 
+          review_text: params[:review_text])
         render json: created
       end
 
