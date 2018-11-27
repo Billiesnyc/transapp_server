@@ -46,15 +46,22 @@ class BusinessesController < ApplicationController
       end
     
       def create
-        created = Business.find_or_create_by(name: params[:name],
+        created = Business.find_or_create_by(
+        name: params[:name],
         latitude: params[:latitude],
         longitude: params[:longitude],
         category: params[:category],
-        subcategory: params[:subcategory],
         city: params[:city],
         state: params[:state],
         country: params[:country],
         places_id: params[:places_id])
+
+        review = Review.create(
+        user_id: params[:user_id], 
+        business_id: created.id, 
+        up: params[:up], 
+        review_text: params[:review])
+
         render json: created
       end
 
