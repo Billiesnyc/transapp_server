@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get 'validate', to: 'users#validate'
   get 'cities', to: 'businesses#cities'
   get 'categories', to: 'businesses#categories'
+  post 'account', to: 'users#update'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

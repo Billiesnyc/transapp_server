@@ -13,6 +13,20 @@ def show
     end 
 end
 
+def edit
+    user = get_current_user
+end
+
+def update
+    user = User.find_by(email: params[:email])
+    if user
+        updatedUser = user.update(email: params[:email], password: params[:password], city: params[:city], gender: params[:gender])
+        render json:user
+    else 
+        render json: {error: 'You are not signed in.'}
+    end 
+end
+
 def login
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
@@ -35,7 +49,7 @@ end
 def validate
     user = get_current_user
     if user
-        render json: {email: user.email, id: user.id, token: issue_token({id: user.id})}
+        render json: {email: user.email, id: user.id, token: issue_token({id: user.id}), city: user.city, gender: user.gender}
     else
         render json: {error: 'User not found.'}, status: 400
     end
