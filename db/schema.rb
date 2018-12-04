@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_22_162940) do
+ActiveRecord::Schema.define(version: 2018_12_03_160518) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 2018_11_22_162940) do
     t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "subcategory"
     t.string "city"
     t.string "state"
     t.string "country"
@@ -48,6 +47,7 @@ ActiveRecord::Schema.define(version: 2018_11_22_162940) do
     t.string "city"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "username"
   end
 
   add_foreign_key "reviews", "businesses"
