@@ -6,7 +6,7 @@ Business.create([
     "latitude": 20.647397,
     "longitude": -100.434761,
     "category": "Medical",
-    "subcategory": "",
+
     "city": "Jurica",
     "state": "QRO",
     "country": "Mexico",
@@ -17,7 +17,7 @@ Business.create([
     "latitude": 37.755259,
     "longitude": -122.419353,
     "category": "Bars",
-    "subcategory": "",
+
     "city": "San Francisco",
     "state": "CA",
     "country": "USA",
@@ -28,7 +28,7 @@ Business.create([
     "latitude": 38.996183,
     "longitude": -77.025243,
     "category": "Clothing",
-    "subcategory": "",
+   
     "city": "Silver Spring",
     "state": "MD",
     "country": "USA",
@@ -39,7 +39,7 @@ Business.create([
     "latitude": 35.858694,
     "longitude": -86.422465,
     "category": "Medical",
-    "subcategory": "",
+
     "city": "Murfreesboro",
     "state": "TN",
     "country": "USA",
@@ -50,7 +50,7 @@ Business.create([
     "latitude": 44.04782,
     "longitude": -123.11721,
     "category": "Retail",
-    "subcategory": "Sex Shop",
+
     "city": "Eugene",
     "state": "OR",
     "country": "USA",
@@ -61,7 +61,7 @@ Business.create([
     "latitude": 53.942412,
     "longitude": -8.94975,
     "category": "Medical",
-    "subcategory": "",
+
     "city": "Swinford",
     "state": "County Mayo",
     "country": "Ireland",
@@ -72,7 +72,7 @@ Business.create([
     "latitude": 38.910466,
     "longitude": -77.031615,
     "category": "Medical",
-    "subcategory": "",
+
     "city": "Washington",
     "state": "DC",
     "country": "USA",
@@ -83,7 +83,7 @@ Business.create([
     "latitude": 38.905347,
     "longitude": -77.060778,
     "category": "Retail",
-    "subcategory": "Makeup",
+
     "city": "Washington",
     "state": "DC",
     "country": "USA",
@@ -94,7 +94,7 @@ Business.create([
     "latitude": 42.655809,
     "longitude": -73.803718,
     "category": "Medical",
-    "subcategory": "",
+   
     "city": "Albany",
     "state": "NY",
     "country": "USA",
@@ -105,7 +105,7 @@ Business.create([
     "latitude": 47.608581,
     "longitude": -122.325172,
     "category": "Medical",
-    "subcategory": "",
+
     "city": "Seattle",
     "state": "WA",
     "country": "USA",
@@ -116,7 +116,7 @@ Business.create([
     "latitude": 47.69709,
     "longitude": -122.367107,
     "category": "Cosmetic",
-    "subcategory": "Electrolysis",
+ 
     "city": "Seattle",
     "state": "WA",
     "country": "USA",
@@ -127,7 +127,7 @@ Business.create([
     "latitude": 47.624755,
     "longitude": -122.359618,
     "category": "Cosmetic",
-    "subcategory": "Laser",
+
     "city": "Seattle",
     "state": "WA",
     "country": "USA",
@@ -138,7 +138,7 @@ Business.create([
     "latitude": 47.632681,
     "longitude": -122.357296,
     "category": "Cosmetic",
-    "subcategory": "Tattoo",
+
     "city": "Seattle",
     "state": "WA",
     "country": "USA",
@@ -149,7 +149,7 @@ Business.create([
     "latitude": 47.615031,
     "longitude": -122.325687,
     "category": "Cosmetic",
-    "subcategory": "Tattoo",
+
     "city": "Seattle",
     "state": "WA",
     "country": "USA",
@@ -160,7 +160,7 @@ Business.create([
     "latitude": 27.681331,
     "longitude": -97.360258,
     "category": "Medical",
-    "subcategory": "",
+
     "city": "Corpus Christi",
     "state": "TX",
     "country": "USA",
@@ -171,7 +171,7 @@ Business.create([
     "latitude": 30.309404,
     "longitude": -97.714768,
     "category": "Community",
-    "subcategory": "Youth",
+
     "city": "Austin",
     "state": "TX",
     "country": "USA",
@@ -182,7 +182,7 @@ Business.create([
     "latitude": 27.722555,
     "longitude": -97.424558,
     "category": "Medical",
-    "subcategory": "",
+
     "city": "Corpus Christi",
     "state": "TX",
     "country": "USA",
@@ -193,7 +193,7 @@ Business.create([
     "latitude": 27.857428,
     "longitude": -97.628976,
     "category": "Medical",
-    "subcategory": "Physical Therapy",
+
     "city": "Corpus Christi",
     "state": "TX",
     "country": "USA",
@@ -204,7 +204,7 @@ Business.create([
     "latitude": 26.252632,
     "longitude": -98.205338,
     "category": "Medical",
-    "subcategory": "Hospital",
+
     "city": "Edinburg",
     "state": "TX",
     "country": "USA",
@@ -215,84 +215,85 @@ Business.create([
  User.create([
    {
      "email": "billie1",
+     "username": "billie1",
      "password": "billie1",
      "gender": "Trans Woman",
      "city": "London"
    },
    {
-     "email": "billie2",
+     "email": "billie2","username": "billie2",
      "password": "billie2",
      "gender": "Trans Woman",
      "city": "London"
    },
    {
-     "email": "billie3",
+     "email": "billie3","username": "billie3",
      "password": "billie3",
      "gender": "Trans Woman",
      "city": "London"
    },
    {
-     "email": "billie4",
+     "email": "billie4","username": "billie4",
      "password": "billie4",
      "gender": "Trans Woman",
      "city": "London"
    },
    {
-     "email": "billie5",
+     "email": "billie5","username": "billie5",
      "password": "billie5",
      "gender": "Trans Woman",
      "city": "London"
    },
    {
-     "email": "seed6",
+     "email": "seed6","username": "seed6",
      "password": "seed6",
      "gender": "Gender-fluid",
      "city": "Jurica"
    },
    {
-     "email": "seed7",
+     "email": "seed7","username": "seed7",
      "password": "seed7",
      "gender": "Gender-fluid, Transmasculine",
      "city": "San Francisco"
    },
    {
-     "email": "seed8",
+     "email": "seed8","username": "seed8",
      "password": "seed8",
      "gender": "Non-Binary",
      "city": "Silver Spring"
    },
    {
-     "email": "seed9",
+     "email": "seed9","username": "seed9",
      "password": "seed9",
      "gender": "Non-Binary, Agender, Gender-fluid, Transmasculine",
      "city": "Swinford"
    },
    {
-     "email": "seed10",
+     "email": "seed10","username": "seed10",
      "password": "seed10",
      "gender": "Non-Binary, Gender-fluid",
      "city": "Washington"
    },
    {
-     "email": "seed11",
+     "email": "seed11","username": "seed11",
      "password": "seed11",
      "gender": "Non-Binary, Gender-fluid, Transfeminine",
      "city": "Albany"
    },
    {
-     "email": "seed12",
+     "email": "seed12","username": "seed12",
      "password": "seed12",
      "gender": "Non-Binary, Gender-fluid, Transmasculine",
      "city": "Seattle"
    },
    {
-     "email": "seed13",
+     "email": "seed13","username": "seed13",
      "password": "seed13",
      "gender": "Non-Binary, Transfeminine",
      "city": "Corpus Christi"
    },
    {
-     "email": "seed14",
+     "email": "seed14","username": "seed14",
      "password": "seed14",
      "gender": "Non-Binary, Transmasculine",
      "city": "Austin"
