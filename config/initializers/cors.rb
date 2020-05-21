@@ -17,7 +17,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
     allow do
-      origins 'https://silly-joliot-cc6a04.netlify.app', 'http://affirm.billiesimmons.com'
+      origins 'https://silly-joliot-cc6a04.netlify.app', 'http://affirmspace.billiesimmons.com'
       resource '*',
         headers: :any,
         methods: [:get, :post, :put, :patch, :delete, :options, :head]
